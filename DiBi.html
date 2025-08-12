@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiBi</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-size: 24px;
+        }
+        nav {
+            position: relative;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+        }
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            z-index: 1;
+        }
+        .dropdown a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        .dropdown a:hover {
+            background-color: #f4f4f4;
+        }
+        .content {
+            padding: 20px;
+            background-image: linear-gradient(rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5)), url('https://png.pngtree.com/background/20230519/original/pngtree-store-with-hanging-clothing-in-a-high-end-environment-picture-image_2654941.jpg'); /* Замените на ваше изображение */
+            background-size: cover;
+            background-position: center;
+            height: 800px;
+            display: flex;
+            align-items: flex-start; /* Выравнивание по верхнему краю */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">DiBi</div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Каталог</a>
+                <div class="dropdown">
+                    <a href="#">Мужская одежда</a>
+                    <a href="#">Женская одежда</a>
+                    <a href="#">Аксессуары</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">О нас</a>
+                <div class="dropdown">
+                    <p>Краткая информация о компании.</p>
+                    <p>Телефон: +7 (123) 456-78-90</p>
+                </div>
+            </li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>Добро пожаловать в DiBi!</h1>
+    <p></p>
+</div>
+
+<footer>
+    <p>Политика конфиденциальности</p>
+    <p>Следите за нами в социальных сетях:</p>
+    <a href="https://t.me/yourchannel" style="color:white;">Telegram</a> | 
+    <a href="https://vk.com/yourpage" style="color:white;">VK</a> | 
+    <a href="https://instagram.com/yourprofile" style="color:white;">Instagram</a>
+</footer>
+
+</body>
+</html>
